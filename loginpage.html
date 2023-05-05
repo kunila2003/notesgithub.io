@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+    <div class="log">
+        <div class="login-box">
+            <div class="btn-box">
+                <div id="btnn"></div>
+                <button class="tog-btn" onclick="login()">Log in</button>
+                <button class="tog-btn"onclick="register()">Register</button>
+            </div>
+            <div class="login-icons">
+                <img src="fbimg.jpg">
+                <img src="googleimg.jpg">
+            </div>
+            <form id="inn" class="login-grp">
+                <input type="text" class="login-fd" placeholder="User Id" required>
+                <input type="text" class="login-fd" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><SPAN>Remember Password</SPAN>
+                <button type="submit" class="sub-btn">Log in</button>
+            </form>
+            <form id="reg" class="login-grp">
+                <input type="text" class="login-fd" placeholder="User Id" required>
+                <input type="text" class="login-fd" placeholder="Email Id" required>
+                <input type="text" class="login-fd" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><SPAN>I Agree to the Terms and Conditions</SPAN>
+                <button type="submit" class="sub-btn">Register</button>
+    
+            </form>
+        </div>
+    </div>
+    <script>
+        var a = document.getElementById("inn");
+        var b = document.getElementById("reg");
+        var c = document.getElementById("btnn");
+        function register(){
+            a.style.left = "-400px"
+            b.style.left = "50px "
+            c.style.left = "110px"
+
+        }
+        function login(){
+            a.style.left = "50px"
+            b.style.left = "450px "
+            c.style.left = "0px"
+
+        }
+    </script>
+</body>
+</html>
